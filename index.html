@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>CSS Animation Playground</h1>
+  <div id="controls">
+    <select id="presetSelect">
+      <option value="">--Select Preset--</option>
+    </select>
+    <button id="addKeyframeBtn">Add Keyframe</button>
+    <button id="generateBtn">Generate CSS</button>
+    <button id="shareBtn">Save/Share</button>
+    <input id="shareUrl" readonly>
+  </div>
+
+  <div id="editor">
+    <div id="timelineContainer">
+      <div id="timeline"></div>
+    </div>
+    <div id="properties">
+      <label>Offset: <span id="offsetDisplay">0%</span></label>
+      <textarea id="styleInput" placeholder="CSS properties"></textarea>
+    </div>
+  </div>
+
+  <div id="preview">
+    <div id="box">Animate me</div>
+  </div>
+
+  <pre id="cssOutput"></pre>
+
+  <script src="presets.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
